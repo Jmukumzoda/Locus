@@ -414,6 +414,13 @@ aside {
   }
 }
 
+@media(max-width:463px) {
+  .sponsors {
+    margin-top: 20px;
+    margin-left: 17%;
+  }
+}
+
 /* @media(max-width:1250px) {
   .furniture {
     position: relative;
