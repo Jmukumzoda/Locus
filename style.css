@@ -12,6 +12,7 @@ header {
   height: fit-content;
   padding-top: 20px;
   cursor: pointer;
+
 }
 
 .container {
@@ -151,6 +152,19 @@ aside {
   font-weight: 900;
   line-height: normal;
   width: 330px;
+  animation: fadeInLeftMedia 1s 0.8s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
+}
+
+@keyframes fadeInLeftMedia {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translate3d(40px, 10px, 0);
+  }
+
+  30% {
+    opacity: 1;
+  }
 }
 
 .inform p {
@@ -160,6 +174,8 @@ aside {
   font-weight: 400;
   line-height: normal;
   width: 520px;
+  animation: fadeInLeftMedia 1s 1.2s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .btn_inform button {
@@ -172,6 +188,8 @@ aside {
   flex-shrink: 0;
   color: white;
   cursor: pointer;
+  animation: fadeInLeftMedia 1s 1.7s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .img_block {
@@ -198,6 +216,13 @@ aside {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  animation: fadeInLeftMedia 1s 2.1s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.work p {
+  animation: fadeInLeftMedia 1s 2.5s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .Video {
@@ -209,10 +234,14 @@ aside {
 
 .photo {
   width: 730px;
+  animation: fadeInLeftMedia 1s 2.9s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .discription h3 {
   width: 400px;
+  animation: fadeInLeftMedia 1s 3.9s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .discription {
@@ -222,12 +251,19 @@ aside {
   background-image: url(../locus_pr/public/img/Rectangle.png);
   background-position: center;
   background-repeat: no-repeat;
+  animation: fadeInLeftMedia 1s 3.5s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .dizayn {
   margin-top: 90px;
   display: flex;
   gap: 90px;
+}
+
+.dizayn img {
+  animation: fadeInLeftMedia 1s 4.3s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 /* .furniture {
@@ -241,6 +277,8 @@ aside {
 }
 
 .project h2 {
+  animation: fadeInLeftMedia 1s 4.8s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
   color: #1C2323;
   font-family: Poppins;
   font-size: 30px;
@@ -251,6 +289,8 @@ aside {
 }
 
 .project p {
+  animation: fadeInLeftMedia 1s 5.4s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
   color: #486958;
   font-family: Poppins;
   font-size: 20px;
@@ -275,6 +315,8 @@ aside {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  animation: fadeInLeftMedia 1s 5.8s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .text p {
@@ -284,6 +326,8 @@ aside {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  animation: fadeInLeftMedia 1s 6.4s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .our_projects {
@@ -300,6 +344,8 @@ aside {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  animation: fadeInLeftMedia 1s 6.9s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .our_projects p {
@@ -309,6 +355,13 @@ aside {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  animation: fadeInLeftMedia 1s 7.5s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.our_projects img {
+  animation: fadeInLeftMedia 1s 7.9s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .section4 {
@@ -323,6 +376,8 @@ aside {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  animation: fadeInLeftMedia 1s 8.5s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .sponsors {
@@ -331,6 +386,71 @@ aside {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  animation: fadeInLeftMedia 1s 8.9s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
+}
+
+footer {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  height: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 13px
+}
+
+.contact {
+  border: 1px solid #486958;
+  width: 480px;
+  height: 186px;
+}
+
+form input {
+  border: none;
+  opacity: initial;
+}
+
+form button {
+  border-radius: 20px 20px 20px 0px;
+  background: #58A9A5;
+  border: none;
+  width: 131px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+  cursor: pointer;
+}
+
+form a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.cover_text h2 {
+  color: #1C2323;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  animation: fadeInLeftMedia 1s 9.5s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.cover_text p {
+  animation: fadeInLeftMedia 1s 9.9s both cubic-bezier(0.3, 0, 0.2, 1);
+  will-change: transform;
+  width: 60%;
 }
 
 @media(max-width:1150px) {
@@ -350,6 +470,12 @@ aside {
   .our_projects {
     flex-wrap: wrap;
     margin-left: 30%;
+  }
+
+  footer {
+    margin-left: 20%;
+    gap: 1px;
+    height: 0px;
   }
 }
 
@@ -467,10 +593,35 @@ aside {
       color: #19a6f1;
     }
 
+    .ul_li2 a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 4px;
+      background-color: #FEC62D;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+
+    .ul_li2 a:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+
+    .ul_li2 a {
+      /* color: #18272F; */
+      position: relative;
+      text-decoration: none;
+    }
+
     .exit-btn {
       object-fit: initial;
       margin-left: 90%;
-      margin-top: -50%;
+      margin-top: -30%;
       width: 20px;
     }
   }
